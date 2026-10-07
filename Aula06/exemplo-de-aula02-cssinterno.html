@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudando Classes com CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(to right, #b4b6bd, #1b03ee);
+        }
+
+        .titulo {
+            color: rgb(255, 253, 253);
+            text-align: center;
+        }
+
+        .primeira-div {
+            background: linear-gradient(to right, #ffffff, #007cf0);
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .segunda-div {
+            background: linear-gradient(to right, #fdfdfb, #00fad9);
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .texto-destaque {
+            font-weight: bold;
+        }
+
+        .texto-normal {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="titulo">Estudando Classes com CSS</h1>
+
+    <div class="primeira-div">
+        <p class="texto-destaque">
+            Este é o primeiro parágrafo da primeira div.
+        </p>
+
+        <p class="texto-destaque">
+            Este é o segundo parágrafo da primeira div.
+        </p>
+    </div>
+
+    <div class="segunda-div">
+        <p class="texto-normal">
+            Este é o único parágrafo da segunda div.
+        </p>
+    </div>
+
+</body>
+</html>
