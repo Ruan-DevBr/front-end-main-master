@@ -22,3 +22,101 @@ body{
 
     min-height: 100vh;
 }
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: #1e293b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1{
+    margin: 0 0 10px;
+}
+
+.cabecalho p{
+    margin: 0;
+}
+
+.barra-lateral{
+    grid-area: sidebar;
+    background-color: #dbeafe;
+    padding: 20px;
+}
+
+.barra-lateral h2{
+    color: #1e293b;
+}
+
+.barra-lateral ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li{
+    margin-bottom: 10px;
+}
+
+.barra-lateral a{
+    display: block;
+    background-color: #35465a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.barra-lateral a:hover{
+    background-color: #1e293b;
+    transition: 0.3s;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.grid-principal{
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2{
+    margin-top: 0;
+    color: #173f6d;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px black;
+}
+
+.card:hover{
+    background-color: #1e293b;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #1e293b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
