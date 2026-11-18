@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra seu caminho para começar no desenvolvimento Front-End.">
+    <title>Descubra seu caminho no Front-End</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+            <p class="etiqueta">SUA JORNADA COMEÇA AQUI</p>
+            <h1>Descubra seu caminho no <span>Front-End</span></h1>
+            <p class="cabecalho__descricao">
+                Escolha o que mais desperta sua curiosidade e receba uma orientação
+                para dar o próximo passo na programação.
+            </p>
+            <button type="button" id="btnTema" class="botao botao--tema"
+                    aria-label="Alternar entre tema claro e escuro">
+                ☾ Alterar tema
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="painel" aria-labelledby="tituloFormulario">
+            <div class="painel__titulo">
+                <span class="numero-etapa">01</span>
+                <div>
+                    <h2 id="tituloFormulario">Vamos conhecer você?</h2>
+                    <p>Preencha os campos abaixo para receber sua orientação.</p>
+                </div>
+            </div>
+
+            <form id="formOrientacao" novalidate>
+                <div class="campo">
+                    <label for="nomeUsuario">Como podemos chamar você?</label>
+                    <input
+                        type="text"
+                        id="nomeUsuario"
+                        name="nomeUsuario"
+                        placeholder="Digite seu nome"
+                        autocomplete="given-name"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="tecnologia">Qual tecnologia você quer explorar?</label>
+                    <select id="tecnologia" name="tecnologia" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btnGerar" class="botao botao--principal">
+                    Gerar minha orientação <span aria-hidden="true">→</span>
+                </button>
+            </form>
+        </section>
+
+        <section class="resultado" aria-labelledby="tituloResultado">
+            <div class="resultado__cabecalho">
+                <span class="numero-etapa">02</span>
+                <div>
+                    <h2 id="tituloResultado">Sua orientação</h2>
+                    <p>Seu próximo passo no universo Front-End.</p>
+                </div>
+            </div>
+
+            <div id="areaResultado" class="resultado__conteudo" aria-live="polite" aria-atomic="true">
+                <div class="resultado__icone" aria-hidden="true">✦</div>
+                <p> sua mensagem personalizada aparecerá aqui depois que você preencher os campos.</p>
+            </div>
+        </section>
+
+        <aside class="dica" aria-label="Dica para estudar">
+            <strong>Uma dica:</strong>
+            pratique um pouco todos os dias. A evolução acontece passo a passo!
+        </aside>
+    </main>
+
+    <footer class="rodape">
+        <p>Projeto 3 · Desenvolvimento Front-End para Web</p>
+    </footer>
+</body>
+</html>
